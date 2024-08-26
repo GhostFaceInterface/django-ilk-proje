@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .product { margin-bottom: 20px; }
+        .product h2 { margin: 0; }
+        .product p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>Products</h1>
+    <ul>
+        {% for product in products %}
+            <li class="product">
+                <h2><a href="{% url 'product_detail' product.pk %}">{{ product.name }}</a></h2>
+                <p>{{ product.description }}</p>
+                <p><strong>Price:</strong> ${{ product.price }}</p>
+                <p><strong>Stock:</strong> {{ product.stock }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
