@@ -1,0 +1,1 @@
+Bu projede, Django ve Django REST Framework kullanarak basit bir e-ticaret uygulaması geliştirdim. Bu uygulama, ürünleri yönetmek ve API üzerinden bu ürünlerle ilgili işlemleri gerçekleştirmek için tasarlandı. Ayrıca, güvenlik için kimlik doğrulama ve yetkilendirme mekanizmaları ekledim.
